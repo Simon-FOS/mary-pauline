@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
-  <title>Mary‑Pauline Allied Enterprise | Home</title>
+  <title>Mary‑Pauline Allied | About</title>
   <!-- Bootstrap 5 + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -126,58 +126,40 @@
     .navbar-toggler-icon {
       filter: brightness(0) invert(1);
     }
-    /* ----- hero section (full width, green/yellow overlay) ----- */
-    .hero-section {
+    /* ----- hero (about) with green/yellow overlay ----- */
+    .hero-about {
       background: linear-gradient(135deg, rgba(20, 80, 40, 0.85) 0%, rgba(40, 110, 60, 0.75) 100%), 
-                  url('https://images.unsplash.com/photo-1594144157714-0cb9ae3e014e?w=1600&h=700&fit=crop&crop=center') center/cover no-repeat;
-      padding: 7rem 0 6rem;
+                  url('https://images.unsplash.com/photo-1547619292-1b3c54920fde?w=1600&h=500&fit=crop&crop=center') center/cover no-repeat;
+      padding: 5rem 0 4rem;
       margin-bottom: 2.5rem;
       border-bottom: 6px solid var(--farm-yellow);
       box-shadow: inset 0 -10px 30px rgba(0,0,0,0.1);
     }
-    .hero-section h1 {
-      font-size: 3.7rem;
+    .hero-about h1 {
+      font-size: 3.5rem;
       font-weight: 800;
-      letter-spacing: -0.02em;
       color: white;
       text-shadow: 0 4px 20px rgba(0, 20, 0, 0.5);
     }
-    .hero-section h1 .highlight {
+    .hero-about .highlight {
       color: var(--farm-yellow);
       background: rgba(0,0,0,0.15);
       padding: 0 12px;
       border-radius: 20px;
       display: inline-block;
     }
-    .hero-section p {
-      font-size: 1.35rem;
+    .hero-about p {
+      font-size: 1.3rem;
       color: rgba(255, 255, 240, 0.95);
-      max-width: 650px;
+      max-width: 700px;
       margin: 0 auto;
       background: rgba(0, 30, 10, 0.3);
       backdrop-filter: blur(4px);
-      padding: 0.8rem 1.8rem;
+      padding: 0.7rem 1.8rem;
       border-radius: 60px;
       border-left: 4px solid var(--farm-yellow);
     }
-    .hero-section .btn-hero {
-      background-color: var(--farm-yellow);
-      border: none;
-      color: #0d3d1e;
-      font-weight: 700;
-      padding: 0.8rem 2.8rem;
-      border-radius: 60px;
-      font-size: 1.2rem;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      transition: 0.25s;
-    }
-    .hero-section .btn-hero:hover {
-      background-color: #fcdb6e;
-      transform: scale(1.04);
-      color: #0a2e16;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.4);
-    }
-    /* ----- cards / sections (green & yellow touches) ----- */
+    /* section titles */
     .section-title {
       font-weight: 700;
       color: var(--farm-green-dark);
@@ -201,15 +183,8 @@
     }
     .card img {
       border-radius: 28px 28px 0 0;
-      height: 210px;
+      height: 200px;
       object-fit: cover;
-    }
-    .card .card-title {
-      color: var(--farm-green-dark);
-      font-weight: 700;
-    }
-    .card .card-text {
-      color: #2b4b35;
     }
     .badge-farm {
       background-color: var(--farm-yellow);
@@ -217,6 +192,9 @@
       font-weight: 600;
       padding: 0.35rem 1.2rem;
       border-radius: 60px;
+    }
+    .bg-farm-soft {
+      background: #f0f9ed;
     }
     /* ----- footer (green base + yellow accents) ----- */
     .footer-custom {
@@ -261,20 +239,15 @@
       font-size: 0.95rem;
       color: #c4dbc8;
     }
-    /* extra small tweaks */
     .text-farm-yellow {
       color: var(--farm-yellow);
     }
-    .bg-farm-soft {
-      background: #f0f9ed;
-    }
     @media (max-width: 768px) {
-      .hero-section h1 {
-        font-size: 2.6rem;
+      .hero-about h1 {
+        font-size: 2.4rem;
       }
-      .hero-section p {
+      .hero-about p {
         font-size: 1rem;
-        padding: 0.5rem 1.2rem;
       }
       .navbar-custom .navbar-brand {
         font-size: 1.2rem;
@@ -287,7 +260,6 @@
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
-      <!-- brand: logo + name -->
       <a class="navbar-brand" href="#">
         <i class="bi bi-tree-fill"></i>
         Mary‑Pauline Allied
@@ -297,98 +269,108 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i> Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-grid-3x3-gap-fill"></i> Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-envelope-fill"></i> Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- ========== HERO SECTION ========== -->
-  <section class="hero-section text-center">
+  <!-- ========== HERO (ABOUT) ========== -->
+  <section class="hero-about text-center">
     <div class="container">
-      <h1 class="display-3 fw-bold mb-3">Livestock, <span class="highlight">grown with care</span></h1>
-      <p class="lead mb-4"><i class="bi bi-droplet me-2 text-farm-yellow"></i> CatFish · Chicken · sustainable farm</p>
-      <div class="mt-4">
-        <a href="#" class="btn btn-hero me-3"><i class="bi bi-arrow-right-circle me-2"></i>Explore our farm</a>
-        <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5" style="border:2px solid white; color:white; font-weight:600;">+234 803 075 9676</a>
-      </div>
-      <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
-        <span class="badge-farm"><i class="bi bi-check-circle-fill me-1"></i> 100% natural</span>
-        <span class="badge-farm"><i class="bi bi-truck me-1"></i> Lagos delivery</span>
-      </div>
+      <h1 class="display-3 fw-bold mb-3">About <span class="highlight">Mary‑Pauline</span></h1>
+      <p class="lead mb-0"><i class="bi bi-flower1 me-2 text-farm-yellow"></i> Passionate about sustainable livestock</p>
     </div>
   </section>
 
-  <!-- ========== MAIN CONTENT (Home) ========== -->
+  <!-- ========== MAIN CONTENT (ABOUT) ========== -->
   <main>
     <div class="container">
-      <!-- intro / quick info -->
-      <div class="row g-4 align-items-center mb-5">
-        <div class="col-md-6">
-          <h2 class="section-title">Welcome to Mary‑Pauline</h2>
-          <p class="fs-5" style="color: #1d462b;">We are a family‑owned animal production farm, specializing in premium <strong>CatFish</strong> and <strong>chicken</strong> livestock. Quality, sustainability, and traceability are at our core.</p>
-          <p><i class="bi bi-geo-alt-fill text-farm-yellow me-2"></i> Plot 228, Opp. Officers Mess, Ojo Barracks, Lagos</p>
-          <p><i class="bi bi-telephone-fill text-farm-yellow me-2"></i> <strong>08030759676</strong></p>
-          <p><i class="bi bi-person-fill text-farm-yellow me-2"></i> CEO: Mrs. MaryPauline Ihejirika</p>
-          <a href="#" class="btn btn-primary mt-2"><i class="bi bi-whatsapp me-1"></i> Chat on WhatsApp</a>
+
+      <!-- story + CEO -->
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6">
+          <h2 class="section-title">Our story</h2>
+          <p class="fs-5" style="color: #1d462b;">Mary‑Pauline Allied Enterprise began with a vision: to provide <strong>healthy, ethically raised livestock</strong> to Lagos families and businesses. What started as a small poultry farm has grown into a diversified animal production hub, specialising in CatFish and chicken.</p>
+          <p>We combine modern farming techniques with traditional care, ensuring every animal is raised in a stress‑free environment. Our farm is located in Ojo, Lagos, with a commitment to traceability and quality.</p>
+          <div class="mt-3 p-3 bg-farm-soft rounded-4 border-start border-5 border-warning">
+            <i class="bi bi-person-circle fs-3 text-farm-yellow me-2"></i>
+            <span class="fw-bold">Mrs. MaryPauline Ihejirika</span> — CEO &amp; founder, with over 15 years of experience in agribusiness.
+          </div>
+          <div class="mt-4">
+            <span class="badge-farm me-2"><i class="bi bi-droplet me-1"></i> CatFish</span>
+            <span class="badge-farm me-2"><i class="bi bi-egg-fill me-1"></i> Chicken</span>
+            <span class="badge-farm"><i class="bi bi-tree me-1"></i> Sustainable</span>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img src="https://images.unsplash.com/photo-1547619292-1b3c54920fde?w=600&h=400&fit=crop&crop=center" alt="farm animals" class="img-fluid rounded-4 shadow-lg" style="border:4px solid var(--farm-yellow);">
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1572236031562-f3b8c6a5b0af?w=600&h=450&fit=crop&crop=center" alt="farm owner" class="img-fluid rounded-4 shadow-lg" style="border:4px solid var(--farm-yellow);">
         </div>
       </div>
 
-      <!-- services preview (3 cards) -->
+      <!-- values / mission cards -->
       <div class="row g-4 mt-3">
         <div class="col-12">
-          <h2 class="section-title">Our services</h2>
+          <h2 class="section-title">What we stand for</h2>
         </div>
-        <!-- card 1 -->
         <div class="col-md-4">
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1572236031562-f3b8c6a5b0af?w=600&h=300&fit=crop&crop=center" class="card-img-top" alt="catfish">
+          <div class="card p-3 text-center h-100">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-fish text-farm-yellow me-1"></i> CatFish production</h5>
-              <p class="card-text">High‑quality fingerlings and table‑size catfish, raised in clean ponds with natural feed.</p>
-              <a href="#" class="btn btn-outline-success btn-sm rounded-pill">Learn more</a>
+              <i class="bi bi-heart-fill text-farm-yellow fs-1"></i>
+              <h5 class="card-title mt-2">Animal welfare</h5>
+              <p class="card-text">We prioritise the well‑being of our livestock, with spacious pens, clean water, and natural feed.</p>
             </div>
           </div>
         </div>
-        <!-- card 2 -->
         <div class="col-md-4">
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1561983221-e0a8c54fcd41?w=600&h=300&fit=crop&crop=center" class="card-img-top" alt="chicken">
+          <div class="card p-3 text-center h-100">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-egg-fill text-farm-yellow me-1"></i> Chicken production</h5>
-              <p class="card-text">Broilers and layers, free‑range &amp; vaccinated. Fresh eggs and quality poultry meat.</p>
-              <a href="#" class="btn btn-outline-success btn-sm rounded-pill">Learn more</a>
+              <i class="bi bi-shield-fill-check text-farm-yellow fs-1"></i>
+              <h5 class="card-title mt-2">Quality &amp; safety</h5>
+              <p class="card-text">From hatchery to harvest, we follow strict hygiene and quality control protocols.</p>
             </div>
           </div>
         </div>
-        <!-- card 3 -->
         <div class="col-md-4">
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1594144157714-0cb9ae3e014e?w=600&h=300&fit=crop&crop=center" class="card-img-top" alt="farm">
+          <div class="card p-3 text-center h-100">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-truck text-farm-yellow me-1"></i> Farm‑to‑table</h5>
-              <p class="card-text">Direct supply to restaurants, hotels, and households in Lagos. Freshness guaranteed.</p>
-              <a href="#" class="btn btn-outline-success btn-sm rounded-pill">Learn more</a>
+              <i class="bi bi-people-fill text-farm-yellow fs-1"></i>
+              <h5 class="card-title mt-2">Community focus</h5>
+              <p class="card-text">We support local farmers and offer training, creating jobs and sustainable food systems.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- extra CEO note / green touch -->
+      <!-- farm at a glance (address, phone, social) -->
       <div class="row mt-5 p-4 bg-farm-soft rounded-5 shadow-sm align-items-center" style="border-left: 12px solid var(--farm-yellow);">
-        <div class="col-md-8">
-          <h4 class="fw-bold"><i class="bi bi-megaphone-fill text-farm-yellow me-2"></i> From our CEO</h4>
-          <p class="mb-0 fs-5 fst-italic">“At Mary‑Pauline Allied, we treat every animal with respect and every customer like family. Our green practices ensure you get the best.”</p>
-          <p class="mt-2"><strong>— Mrs. MaryPauline Ihejirika</strong></p>
+        <div class="col-md-7">
+          <h4><i class="bi bi-pin-map-fill text-farm-yellow me-2"></i> Visit our farm</h4>
+          <p class="mb-1"><i class="bi bi-geo-alt me-2"></i> <strong>Plot 228, Opposite Officers Mess, Ojo Barracks, Ojo, Lagos.</strong></p>
+          <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i> <span class="fw-bold">08030759676</span></p>
+          <p><i class="bi bi-tiktok me-2"></i> TikTok: <span class="fw-bold">@Mary‑Pauline</span></p>
         </div>
-        <div class="col-md-4 text-md-end">
-          <span class="badge-farm fs-6"><i class="bi bi-tiktok me-1"></i> @Mary‑Pauline</span>
+        <div class="col-md-5 text-md-end">
+          <span class="badge-farm fs-6 me-1"><i class="bi bi-whatsapp me-1"></i> WhatsApp</span>
+          <span class="badge-farm fs-6"><i class="bi bi-facebook me-1"></i> Facebook</span>
+          <div class="mt-2">
+            <span class="badge-farm fs-6"><i class="bi bi-youtube me-1"></i> YouTube</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- extra: team / values (another clean image) -->
+      <div class="row g-4 mt-4 align-items-center">
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1594144157714-0cb9ae3e014e?w=600&h=400&fit=crop&crop=center" class="img-fluid rounded-4 shadow" alt="farm landscape">
+        </div>
+        <div class="col-md-8">
+          <h3 class="fw-bold" style="color: var(--farm-green-dark);"><i class="bi bi-arrow-right-circle-fill text-farm-yellow me-2"></i> Our promise</h3>
+          <p>Every product from Mary‑Pauline Allied is backed by our reputation. Whether you need fresh catfish, chicken, or eggs, we deliver with a smile. We believe in <strong>green farming</strong> — for the land, the animals, and the people.</p>
+          <p class="mb-0"><i class="bi bi-check-circle-fill text-farm-yellow me-1"></i> Trusted by hotels, restaurants, and families across Lagos.</p>
         </div>
       </div>
     </div>
@@ -398,14 +380,12 @@
   <footer class="footer-custom">
     <div class="container">
       <div class="row g-4">
-        <!-- column 1: brand + address -->
         <div class="col-md-4">
           <h5><i class="bi bi-tree-fill me-2"></i>Mary‑Pauline Allied</h5>
           <p class="small"><i class="bi bi-geo-alt me-1"></i> Plot 228, Opp. Officers Mess, Ojo Barracks, Ojo, Lagos.</p>
           <p class="small"><i class="bi bi-telephone-fill me-1"></i> <span class="footer-phone">08030759676</span></p>
           <p class="small"><i class="bi bi-person-badge me-1"></i> CEO: Mrs. MaryPauline Ihejirika</p>
         </div>
-        <!-- column 2: quick links (placeholders) -->
         <div class="col-md-4">
           <h5>Quick links</h5>
           <ul class="list-unstyled small">
@@ -415,7 +395,6 @@
             <li><a href="#" class="text-white-50 text-decoration-none">Privacy</a></li>
           </ul>
         </div>
-        <!-- column 3: social media (WhatsApp, Facebook, TikTok, YouTube) -->
         <div class="col-md-4">
           <h5>Connect with us</h5>
           <div class="d-flex flex-wrap">
@@ -429,14 +408,13 @@
           </div>
         </div>
       </div>
-      <!-- copyright -->
       <div class="copy text-center small mt-4">
         &copy; 2026 Mary‑Pauline Allied Enterprise — green &amp; growing.
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS (for toggler, etc) -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
